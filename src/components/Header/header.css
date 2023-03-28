@@ -1,0 +1,24 @@
+.header{
+    background-color: black;
+    width: 100%;
+    height: 69px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.link:nth-child(2){
+    font-size: 20px;
+    background-color: white;
+    padding: 5px 14px;
+    color: black;
+    border-radius: 5;
+}
