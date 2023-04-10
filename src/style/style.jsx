@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 export const Title = styled.h1`
     font-size: 15px;
@@ -42,4 +41,20 @@ export const ImagemEdit = styled.img`
     display: block;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+`
+export const CardDescricao = styled.div`
+    max-width: 800px;
+    background-color: #0059ff;
+    border-radius: 10px;
+`
+
+export const Imagemdescricao = styled.img`
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+`
+export const TextDescricao = styled.p`
+    font-size: 20px;
+    padding: 1rem;
+    color: white;
 `

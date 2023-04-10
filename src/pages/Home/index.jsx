@@ -2,9 +2,11 @@ import { useEffect, useState } from "react"
 import api from "../../services/api"
 
 import { Title, ImagemEdit, Center, Card, Acessar } from "../../style/style"
+import gif from '../../../src/assets/giphy.gif'
 
 function Home(){
     const [filmes, setFilmes] = useState([])
+    const [loading, setLoading] = useState(true)
 
     useEffect(()=>{
         async function loadFilmes(){
@@ -18,11 +20,23 @@ function Home(){
 
             //console.log(response.data.results)
             setFilmes(response.data.results)
+            setLoading(false)
         }
 
         loadFilmes()
 
     }, [])
+
+    if(loading){
+        return(
+            <Center>
+                <div>
+                    <img src={gif} alt="loading" style={{width: '100px', height: '100px'}}/>
+                    <Title>Carregando...</Title>
+                </div>
+            </Center>
+        )
+    }
 
     return(
         <div>
