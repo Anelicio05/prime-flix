@@ -1,5 +1,24 @@
 import styled from 'styled-components'
 
+export const Botao = styled.button`
+    border-radius: 8px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+    transition: all 0.5s;
+    &:hover{
+        background-color: #f1ff30;
+    }
+`
+export const Lista = styled.li`
+    background-color: #0059ff;
+    margin-bottom: 10px;
+    list-style: none;
+`
+
 export const Title = styled.h1`
     font-size: 15px;
     padding: 1rem;
@@ -46,6 +65,7 @@ export const CardDescricao = styled.div`
     max-width: 800px;
     background-color: #0059ff;
     border-radius: 10px;
+    padding-bottom: 0.5rem;
 `
 
 export const Imagemdescricao = styled.img`
